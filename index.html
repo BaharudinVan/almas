@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alfan & Imas | Our Story</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            background: #050505;
+            color: white;
+            font-family: Poppins, sans-serif;
+
+        }
+
+
+        audio {
+            display: none;
+        }
+
+
+        section {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+
+
+        /* OPENING */
+
+
+        .hero {
+
+            text-align: center;
+
+            position: relative;
+
+            background:
+
+                linear-gradient(rgba(0, 0, 0, .55),
+                    rgba(0, 0, 0, .85)),
+
+                url("foto/foto1.jpg");
+
+            background-size: cover;
+
+            background-position: right center;
+
+        }
+
+
+
+
+        .hero-content {
+
+            animation: fade 2s;
+
+            width: 90%;
+
+        }
+
+
+
+        .small {
+
+            letter-spacing: 8px;
+
+            font-size: 13px;
+
+            opacity: .7;
+
+        }
+
+
+
+        h1 {
+
+            font-family:
+                "Cormorant Garamond";
+
+            font-size: 80px;
+
+            margin: 30px 0;
+
+        }
+
+
+
+        .line {
+
+            height: 1px;
+
+            width: 120px;
+
+            background: white;
+
+            margin: auto;
+
+        }
+
+
+
+        .date {
+
+            margin-top: 30px;
+
+            letter-spacing: 5px;
+
+        }
+
+
+
+        .quote {
+
+            margin-top: 40px;
+
+            font-style: italic;
+
+            font-size: 20px;
+
+            opacity: .8;
+
+        }
+
+
+
+        button {
+
+
+            margin-top: 60px;
+
+
+            padding: 18px 45px;
+
+
+            background:
+
+                rgba(255, 255, 255, .1);
+
+
+            border:
+
+                1px solid white;
+
+
+            color: white;
+
+
+            cursor: pointer;
+
+
+            font-size: 16px;
+
+
+            transition: .4s;
+
+
+        }
+
+
+
+        button:hover {
+
+            background: white;
+
+            color: black;
+
+        }
+
+
+
+
+
+        /* SECTION */
+
+
+        .story {
+
+            padding: 80px 10%;
+
+            background: #090909;
+
+        }
+
+
+
+        .container {
+
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 60px;
+
+            width: 100%;
+
+
+        }
+
+
+
+        .reverse {
+
+            flex-direction: row-reverse;
+
+        }
+
+
+
+        .container img {
+
+            width: 50%;
+
+            border-radius: 20px;
+
+            box-shadow:
+
+                0 30px 80px black;
+
+        }
+
+
+
+        .text {
+
+            flex: 1;
+
+        }
+
+
+
+        .chapter {
+
+            color: #d6b56d;
+
+            letter-spacing: 6px;
+
+        }
+
+
+
+        h2 {
+
+            font-family:
+                "Cormorant Garamond";
+
+            font-size: 60px;
+
+            margin: 20px 0;
+
+        }
+
+
+
+        p {
+
+            font-size: 20px;
+
+            line-height: 2;
+
+            opacity: .85;
+
+        }
+
+
+
+        /* LOVE TIMER */
+
+
+        .love-time {
+
+
+            margin-top: 70px;
+
+            text-align: center;
+
+
+        }
+
+
+
+        .love-time h2 {
+
+            font-size: 50px;
+
+        }
+
+
+
+        .time-box {
+
+
+            display: grid;
+
+
+            grid-template-columns:
+                repeat(6, 1fr);
+
+
+            gap: 15px;
+
+
+            margin-top: 40px;
+
+
+        }
+
+
+
+        .time-box div {
+
+
+            background:
+
+                rgba(255, 255, 255, .08);
+
+
+            padding: 25px 10px;
+
+
+            border-radius: 15px;
+
+
+        }
+
+
+        .time-box h3 {
+
+
+            font-size: 35px;
+
+
+            color: #d6b56d;
+
+
+        }
+
+
+
+        .time-box span {
+
+
+            opacity: .7;
+
+
+            font-size: 14px;
+
+
+        }
+
+
+
+
+        @keyframes fade {
+
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(40px);
+
+            }
+
+
+            to {
+
+                opacity: 1;
+
+            }
+
+
+        }
+
+
+
+
+        @media(max-width:800px) {
+
+
+            h1 {
+
+                font-size: 45px;
+
+            }
+
+
+
+            .container,
+            .reverse {
+
+                flex-direction: column;
+
+            }
+
+
+
+            .container img {
+
+                width: 100%;
+
+            }
+
+
+
+            .time-box {
+
+                grid-template-columns:
+
+                    repeat(3, 1fr);
+
+            }
+
+
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+    <audio id="music" loop>
+
+        <source src="music/lagu-kita.mp3" type="audio/mp3">
+
+    </audio>
+
+
+
+    <section class="hero">
+
+
+        <div class="hero-content">
+
+
+            <div class="small">
+
+                A FILM ABOUT US
+
+            </div>
+
+
+            <h1>
+
+                Alfan Baharudin
+
+                <br>
+
+                ❤️
+
+                <br>
+
+                Imas Maskupah
+
+            </h1>
+
+
+            <div class="line"></div>
+
+
+            <div class="date">
+
+                22 FEBRUARY 2022
+
+            </div>
+
+
+            <div class="quote">
+
+                "Every love story is beautiful,
+
+                <br>
+
+                but ours is my favorite."
+
+            </div>
+
+
+            <button onclick="startJourney()">
+
+                ▶ Begin Our Journey
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <section class="story" id="story">
+
+
+        <div class="container">
+
+
+            <img src="foto/foto2.jpg">
+
+
+
+            <div class="text">
+
+
+                <div class="chapter">
+
+                    CHAPTER I
+
+                </div>
+
+
+                <h2>
+
+                    The Beginning
+
+                </h2>
+
+
+                <p>
+
+                    22 Februari 2022.
+
+                    <br><br>
+
+                    Hari dimana cerita kita dimulai.
+
+                    Sebuah awal sederhana yang membawa
+
+                    banyak tawa, cerita, dan kenangan.
+
+                </p>
+
+
+                <div class="love-time">
+
+
+                    <h2>
+
+                        Our Time Together ❤️
+
+                    </h2>
+
+
+                    <p>
+
+                        Sejak 22 Februari 2022
+                    </p>
+
+
+                    <div class="time-box">
+
+
+                        <div>
+                            <h3 id="years">0</h3>
+                            <span>Tahun</span>
+                        </div>
+
+
+                        <div>
+                            <h3 id="months">0</h3>
+                            <span>Bulan</span>
+                        </div>
+
+
+                        <div>
+                            <h3 id="days">0</h3>
+                            <span>Hari</span>
+                        </div>
+
+
+                        <div>
+                            <h3 id="hours">0</h3>
+                            <span>Jam</span>
+                        </div>
+
+
+                        <div>
+                            <h3 id="minutes">0</h3>
+                            <span>Menit</span>
+                        </div>
+
+
+                        <div>
+                            <h3 id="seconds">0</h3>
+                            <span>Detik</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <!-- CHAPTER II -->
+
+    <section class="story">
+
+        <div class="container reverse">
+
+
+            <img src="foto/foto3.jpg">
+
+
+            <div class="text">
+
+
+                <div class="chapter">
+
+                    CHAPTER II
+
+                </div>
+
+
+                <h2>
+
+                    Four Years Together
+
+                </h2>
+
+
+                <p>
+
+                    Empat tahun bukan hanya tentang waktu
+
+                    yang berjalan.
+
+                    <br><br>
+
+                    Tetapi tentang semua cerita yang kita buat.
+
+                    Tentang tawa kecil, perjalanan panjang,
+
+                    perbedaan yang mengajarkan kita,
+
+                    dan rasa ingin tetap bersama.
+
+                    <br><br>
+
+                    Terima kasih sudah menjadi bagian
+
+                    dari perjalanan ini.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- CHAPTER III -->
+
+
+    <section class="story">
+
+
+        <div class="container">
+
+
+            <img src="foto/foto4.jpg">
+
+
+            <div class="text">
+
+
+                <div class="chapter">
+
+                    CHAPTER III
+
+                </div>
+
+
+                <h2>
+
+                    Thank You, Imas ❤️
+
+                </h2>
+
+
+                <p>
+
+                    Untuk Calon Istriku, Imas Maskupah,
+
+                    <br><br>
+
+                    Terima kasih sudah hadir dalam hidupku.
+
+                    Terima kasih untuk perhatian,
+
+                    kesabaran, dan semua usaha yang mungkin
+
+                    tidak selalu terlihat.
+
+                    <br><br>
+
+                    Aku bersyukur bisa mengenalmu,
+
+                    menjalani hari-hari bersamamu,
+
+                    dan memiliki seseorang yang selalu
+
+                    membuat perjalanan ini terasa lebih indah.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- CHAPTER IV -->
+
+
+    <section class="story">
+
+
+        <div class="container reverse">
+
+
+            <img src="foto/foto5.jpg">
+
+
+            <div class="text">
+
+
+                <div class="chapter">
+
+                    CHAPTER IV
+
+                </div>
+
+
+                <h2>
+
+                    My Prayer For Us
+
+                </h2>
+
+
+                <p>
+
+                    Semoga ke depannya kita selalu diberikan
+
+                    kesehatan dan kebahagiaan.
+
+                    <br><br>
+
+                    Semoga hubungan ini selalu dipenuhi
+
+                    dengan kasih sayang, kepercayaan,
+
+                    dan kesabaran.
+
+                    <br><br>
+
+                    Semoga setiap langkah yang kita ambil
+
+                    membawa kita menuju masa depan yang
+
+                    lebih baik.
+
+                    <br><br>
+
+                    Semoga kita tetap menjadi tempat pulang
+
+                    satu sama lain.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ENDING -->
+
+
+    <section class="ending">
+
+
+        <img src="foto/foto6.jpg">
+
+
+        <div class="ending-content">
+
+
+            <h1>
+
+                Alfan
+
+                <br>
+
+                ❤️
+
+                <br>
+
+                Imas
+
+            </h1>
+
+
+            <p>
+
+                22 February 2022
+
+                <br><br>
+
+                Thank you for being
+
+                my favorite chapter.
+
+                <br><br>
+
+                Our story is still continuing...
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <style>
+        .ending {
+
+
+            height: 100vh;
+
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+
+        }
+
+
+
+        .ending img {
+
+
+            position: absolute;
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            filter: brightness(.35);
+
+
+        }
+
+
+
+        .ending-content {
+
+
+            position: relative;
+
+            z-index: 2;
+
+
+        }
+
+
+
+        .ending h1 {
+
+
+            font-family:
+
+                "Cormorant Garamond";
+
+
+            font-size: 80px;
+
+
+        }
+
+
+
+        .ending p {
+
+
+            font-size: 20px;
+
+
+        }
+    </style>
+
+
+
+
+
+
+
+    <script>
+        function startJourney() {
+
+
+            let music =
+                document.getElementById("music");
+
+
+            music.volume = 0.35;
+
+
+            music.play();
+
+
+
+            document.getElementById("story")
+                .scrollIntoView({
+
+                    behavior: "smooth"
+
+                });
+
+
+        }
+
+
+
+
+
+
+        function updateLoveTime() {
+
+
+
+            const startDate = new Date(
+                "2022-02-22T00:00:00"
+            );
+
+
+
+            const now = new Date();
+
+
+
+            let diff = now - startDate;
+
+
+
+            let totalSeconds = Math.floor(
+                diff / 1000
+            );
+
+
+
+            let totalMinutes = Math.floor(
+                totalSeconds / 60
+            );
+
+
+
+            let totalHours = Math.floor(
+                totalMinutes / 60
+            );
+
+
+
+            let totalDays = Math.floor(
+                totalHours / 24
+            );
+
+
+
+            let years = Math.floor(
+                totalDays / 365.25
+            );
+
+
+
+            let months = Math.floor(
+                (totalDays - years * 365.25) / 30.44
+            );
+
+
+
+            let days = Math.floor(
+                totalDays -
+                (years * 365.25) -
+                (months * 30.44)
+            );
+
+
+
+            let hours = totalHours % 24;
+
+
+            let minutes = totalMinutes % 60;
+
+
+            let seconds = totalSeconds % 60;
+
+
+
+
+            document.getElementById("years").innerHTML =
+                years;
+
+
+
+            document.getElementById("months").innerHTML =
+                months;
+
+
+
+            document.getElementById("days").innerHTML =
+                days;
+
+
+
+            document.getElementById("hours").innerHTML =
+                hours;
+
+
+
+            document.getElementById("minutes").innerHTML =
+                minutes;
+
+
+
+            document.getElementById("seconds").innerHTML =
+                seconds;
+
+
+        }
+
+
+
+        updateLoveTime();
+
+
+        setInterval(
+            updateLoveTime,
+            1000
+        );
+    </script>
+
+
+</body>
+
+</html>
