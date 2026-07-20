@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Imas Maskupah ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+min-height:100vh;
+overflow-x:hidden;
+padding:20px;
+}
+
+/* BACKGROUND FOTO */
+
+.bg-photo{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+filter:brightness(0.75);
+}
+
+/* OVERLAY */
+
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(135deg,rgba(255,154,158,0.5),rgba(250,208,196,0.5));
+z-index:-1;
+}
+
+/* OPEN SCREEN */
+
+.open-screen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+z-index:10;
+color:white;
+text-align:center;
+}
+
+.open-btn{
+margin-top:20px;
+padding:14px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+background:white;
+color:#ff2e63;
+cursor:pointer;
+font-weight:600;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* HEART BACKGROUND */
+
+.hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:0;
+}
+
+.heart{
+position:absolute;
+font-size:24px;
+animation:fall linear forwards;
+color:#ff2e63;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-10vh);
+opacity:1;
+}
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+/* CARD */
+
+.container{
+max-width:520px;
+margin:auto;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,0.95);
+border-radius:20px;
+padding:35px;
+box-shadow:0 15px 40px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+h1{
+font-family:'Playfair Display',serif;
+color:#c2185b;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#777;
+margin-bottom:20px;
+}
+
+.text{
+text-align:center;
+line-height:1.8;
+font-size:16px;
+color:#444;
+white-space:pre-line;
+min-height:200px;
+}
+
+/* HEART BEAT */
+
+.heartBeat{
+font-size:38px;
+margin-top:10px;
+animation:beat 1.2s infinite;
+text-align:center;
+}
+
+@keyframes beat{
+0%{transform:scale(1)}
+50%{transform:scale(1.25)}
+100%{transform:scale(1)}
+}
+
+.footer{
+text-align:center;
+margin-top:20px;
+font-weight:600;
+color:#c2185b;
+}
+
+/* MUSIC */
+
+.music{
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FOTO BACKGROUND -->
+
+<img class="bg-photo"
+src="https://onedrive.live.com/?qt=allmyphotos&photosData=%2Fshare%2F7FC3833F445C2673%21s4b04f408b4e8404a8f5d3631f3ea7008%3Fithint%3Dphoto%26e%3Dm1zvOW%26migratedtospo%3Dtrue&cid=7FC3833F445C2673&id=7FC3833F445C2673%21s4b04f408b4e8404a8f5d3631f3ea7008&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2kvYy83ZmMzODMzZjQ0NWMyNjczL0lRQUk5QVJMNkxSS1FJOWROakh6Nm5BSUFXXzVxU2N0Q0FOclgzYk02T1lmTEdBP2U9bTF6dk9X&v=photos">
+
+<!-- OPEN SCREEN -->
+
+<div class="open-screen" id="openScreen">
+
+<h2>Ada pesan buat kamu ❤️</h2>
+
+<button class="open-btn" onclick="openMessage()">
+Buka Pesan
+</button>
+
+</div>
+
+<div class="hearts" id="hearts"></div>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Dear Imas Maskupah</h1>
+
+<div class="subtitle">Happy Sunday ☀️</div>
+
+<div class="text" id="text"></div>
+
+<div class="heartBeat">❤️</div>
+
+<div class="footer">
+Love u more, cintaku.
+<br>
+— Alfan Baharudin
+</div>
+
+<div class="music" id="music"></div>
+
+</div>
+
+</div>
+
+<script>
+
+/* MESSAGE TEXT */
+
+const message = `
+Hari ini mungkin lagi berat ya sayang,
+banyak hal yang bikin kamu bingung
+dan kepikiran.
+
+Aku cuma mau kamu tau satu hal,
+kamu nggak sendirian.
+
+Aku selalu ada buat kamu,
+buat dengerin kamu,
+buat nemenin kamu.
+
+Maaf kalau aku pernah ada salah,
+pernah bikin kamu kesel atau sedih.
+
+Aku benar-benar nggak pernah
+punya niat nyakitin hati kamu.
+
+Kalau dunia lagi terasa ribet buat kamu,
+boleh kok sandar sebentar ke aku.
+
+Kita lewatin semuanya
+pelan-pelan ya.
+
+Aku percaya kamu kuat,
+dan aku selalu bangga
+punya kamu.
+`;
+
+/* TYPEWRITER */
+
+let i=0;
+
+function typeWriter(){
+
+if(i < message.length){
+
+document.getElementById("text").innerHTML += message.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,35);
+
+}
+
+}
+
+/* OPEN MESSAGE */
+
+function openMessage(){
+
+document.getElementById("openScreen").style.display="none";
+
+document.getElementById("music").innerHTML = `
+<iframe width="100%" height="120"
+scrolling="no"
+frameborder="no"
+allow="autoplay"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1034234455&auto_play=true">
+</iframe>
+`;
+
+typeWriter();
+
+}
+
+/* HEARTS */
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(Math.random()*3+4)+"s";
+
+document.getElementById("hearts").appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},7000);
+
+}
+
+setInterval(createHeart,400);
+
+</script>
+
+</body>
+</html>
